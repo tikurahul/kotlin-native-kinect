@@ -29,13 +29,13 @@ fun helloKinect() {
 
                     result = k4a_device_start_cameras(device.value, config.ptr)
                     if (result != K4A_RESULT_SUCCEEDED) {
-                        println("Started Cameras.")
+                        println("Unable to start cameras.")
                         return
                     }
 
                     result = k4a_device_start_imu(device.value)
                     if (result != K4A_RESULT_SUCCEEDED) {
-                        println("Started IMU.")
+                        println("Unable to start IMU.")
                         return
                     }
 
